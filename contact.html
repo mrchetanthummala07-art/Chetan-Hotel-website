@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Room | Chetan Hotel</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+<h1>Chetan Hotel</h1>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="rooms.html">Rooms</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Book Now</a>
+</nav>
+
+</header>
+
+<section class="banner">
+
+<h2>Room Booking</h2>
+
+<p>Please fill in the details below to book your room.</p>
+
+</section>
+
+<section style="width:60%; margin:auto; padding:30px;">
+
+<form onsubmit="return bookRoom()">
+
+<label>Full Name</label><br>
+<input type="text" id="name" required
+style="width:100%; padding:10px;"><br><br>
+
+<label>Email</label><br>
+<input type="email" id="email" required
+style="width:100%; padding:10px;"><br><br>
+
+<label>Phone Number</label><br>
+<input type="tel" id="phone" required
+style="width:100%; padding:10px;"><br><br>
+
+<label>Room Type</label><br>
+
+<select id="room"
+style="width:100%; padding:10px;">
+
+<option>Deluxe Room</option>
+<option>Luxury Room</option>
+<option>Family Room</option>
+
+</select>
+
+<br><br>
+
+<label>Check-in Date</label><br>
+
+<input type="date" id="checkin"
+style="width:100%; padding:10px;">
+
+<br><br>
+
+<label>Check-out Date</label><br>
+
+<input type="date" id="checkout"
+style="width:100%; padding:10px;">
+
+<br><br>
+
+<label>Number of Guests</label><br>
+
+<input type="number" id="guests"
+min="1"
+max="10"
+style="width:100%; padding:10px;">
+
+<br><br>
+
+<label>Special Request</label><br>
+
+<textarea id="message"
+rows="5"
+style="width:100%; padding:10px;"></textarea>
+
+<br><br>
+
+<button type="submit">
+Book Room
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>&copy; 2026 Chetan Hotel. All Rights Reserved.</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
